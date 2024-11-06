@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>CRUD</title>
+
+    <!--
+Integrantes:
+Bárbara Bassín
+Micaela Rodríguez
+Valentina Ojeda 
+-->
+
 </head>
 
 <body>
@@ -70,6 +78,24 @@
     <div class="alert alert-danger fade" id="alert-error" role="alert">
         Algo salió mal...
     </div>
+    <!-- Modal de edición de usuario -->
+    <div class="modal fade" tabindex="-1" id="dataModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <label for="inputPutNombre">Nombre:</label>
+                    <input type="text" id="inputPutNombre" class="form-control my-1">
+                    <label for="inputPutApellido">Apellido:</label>
+                    <input type="text" id="inputPutApellido" class="form-control my-1">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="btnSendChanges" disabled>Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" tabindex="-1" id="dataModal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -88,5 +114,7 @@
     </div>
     <script src="scripts/bootstrap.bundle.js"></script>
 </body>
+
+<script src="scripts/script.js"></script>
 
 </html>
